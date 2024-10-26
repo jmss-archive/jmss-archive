@@ -7,6 +7,7 @@ interface Entry {
 	author: string;
 	description: string;
 	url: string | undefined;
+	thumbnail: string | undefined;
 }
 
 export const load: PageLoad = async ({ params }: { params: RouteParams }) => {

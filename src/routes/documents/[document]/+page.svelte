@@ -9,39 +9,67 @@
 </header>
 
 <main>
-	<h1 class="display-font">{entry?.title}</h1>
-	<p class="secondary">by {entry?.author}</p>
-	<br />
-	<p>{entry?.description}</p>
-	<br />
+	<div class="viewer-parent">
+		<div class="viewer-detail">
+			<h1 class="display-font">{entry?.title}</h1>
+			<p class="secondary">by {entry?.author}</p>
+			<br />
+			<p>{entry?.description}</p>
+			<br />
+		</div>
+		<div class="viewer">
+			<iframe src={entry?.url} title="Document" width="100%" height="1000px"></iframe>
+		</div>
+	</div>
 </main>
-<div class="viewer">
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<iframe src={entry?.url} width="100%" height="800px"></iframe>
-</div>
 
 <style>
-	main {
-		max-width: 800px;
-		margin: auto;
-		padding: 1rem;
-	}
-
-	h1,
-	p {
-		margin: 0;
-	}
-
 	header {
 		padding: 1rem;
-		border-bottom: black 1px solid;
+		border-bottom: 1px solid #ddd;
+		background-color: #f9f9f9;
 	}
 
-	header > * {
+	header a {
 		text-decoration: none;
+		color: inherit;
+		/* font-weight: bold; */
+	}
+
+	main {
+		padding: 2rem;
+	}
+
+	.viewer-parent {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.viewer-detail {
+		max-width: 800px;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.viewer-detail h1 {
+		font-size: 2.5rem;
+	}
+
+	.viewer-detail p.secondary {
+		font-size: 1.2rem;
+	}
+
+	.viewer-detail p {
+		font-size: 1rem;
 	}
 
 	.viewer {
-		padding: 1rem;
+		width: 100%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	iframe {
+		border: none;
 	}
 </style>

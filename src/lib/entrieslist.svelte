@@ -7,8 +7,8 @@
 		<a href="/documents/{entry.id}">
 			<div class="entry">
 				<div>
-					<p>{entry.title}</p>
-					<p>by {entry.author}</p>
+					<p class="entry-title">{entry.title}</p>
+					<p class="secondary">by {entry.author}</p>
 				</div>
 			</div>
 		</a>
@@ -27,6 +27,11 @@
 		padding: 1rem 1rem;
 		border-radius: 10px;
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.entry-title {
+		/* font-size: 1.2rem; */
+		font-weight: bold;
 	}
 
 	p {

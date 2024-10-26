@@ -10,23 +10,35 @@
 
 	<h2>Help Wanted</h2>
 	<p>
-		Over several years of history, the halls of JMSS have seen many important documents and
-		artworks. Help us find and preserve them, before it is too late. Open an issue on <a
+		The bridge spaces of JMSS have seen many important documents and artworks. Help us find and
+		preserve them, before it is too late. Open an issue on <a
 			href="https://github.com/jmss-archive/jmss-archive/issues">GitHub</a
 		> to contribute a document.
-	</p>
-
-	<p>
-		Happy to run this page after I'm gone? Open an issue on <a
-			href="https://github.com/jmss-archive/jmss-archive/issues">GitHub</a
-		>.
 	</p>
 </main>
 
 <style>
+	/* Base styles */
 	main {
+		padding: 2rem;
 		max-width: 800px;
-		margin: auto;
-		padding: 1rem;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+		margin-top: 2rem;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 1rem;
 	}
 </style>

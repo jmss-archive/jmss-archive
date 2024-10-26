@@ -1,14 +1,14 @@
 body {
-	font-family: system-ui;
+	font-family: 'IBM Plex Serif', serif;
 	margin: 0;
 
 	--primary: #55a2d8;
-	--secondary: #a0a0a0;
+	--secondary: #949494;
 }
 
-.display-font {
-	font-family: 'IBM Plex Mono', monospace;
-	color: var(--primary);
+h1,
+h2 {
+	font-family: 'IBM Plex Serif';
 }
 
 .secondary {
@@ -16,5 +16,10 @@ body {
 }
 
 a {
-	color: inherit;
+	color: #007acc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
